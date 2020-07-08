@@ -1,3 +1,7 @@
+// var is the old way and caused many issues and traps for developers
+// let is the new way and behaves much more predictably!
+// See below for examples
+
 // BLOCK SCOPE
 // var is scoped to a function
 // let is scoped to a code block ({})
@@ -42,6 +46,7 @@ hoisingWithVar()
 
 function hoisingWithLet() {
   console.log("HOISTING WITH LET")
+  // Uncomment the line below to generate an error
   // console.log(foo) // undefined
   let foo = "Foo"
   console.log(foo) // Foo
@@ -62,6 +67,7 @@ redeclarationVar()
 function redeclarationLet() {
   console.log("REDECLARATION WITH LET")
   let foo = "Foo"
+  // Uncomment the line below to generate an error
   // let foo = "Bar"
   console.log(foo)
 }
