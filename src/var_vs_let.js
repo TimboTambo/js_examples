@@ -1,4 +1,6 @@
 // BLOCK SCOPE
+// var is scoped to a function
+// let is scoped to a code block ({})
 function blockScopeVar() {
   console.log("BLOCK SCOPE WITH VAR")
   var funcs = []
@@ -28,6 +30,8 @@ function blockScopeLet() {
 blockScopeLet()
 
 // HOISTING
+// var declarations are "hoisted" to the top of a function block, so can be referenced before they are declared
+// let declarations are not hoisted, so trying to reference them before they are declared in code causes an error
 function hoisingWithVar() {
   console.log("HOISTING WITH VAR")
   console.log(foo) // undefined
@@ -45,6 +49,8 @@ function hoisingWithLet() {
 hoisingWithLet()
 
 // REDECLARATION
+// var can be re-declared without any issues
+// let cannot be re-declared - trying to throws an error
 function redeclarationVar() {
   console.log("REDECLARATION WITH VAR")
   var foo = "Foo"
