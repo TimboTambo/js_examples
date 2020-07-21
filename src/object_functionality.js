@@ -20,34 +20,34 @@ class car {
 }
 
 //Creating new cars
-car1 = new car("BMW", "M5", "2020", "Sedan", "80,000");
-car2 = new car("BMW", "M4", "2019", "Coupe", "50,000");
+let bmwM5 = new car("BMW", "M5", "2020", "Sedan", "80,000");
+let bmwM4 = new car("BMW", "M4", "2019", "Coupe", "50,000");
 
-cars = [car1, car2];
+let cars = [bmwM5, bmwM4];
 
 //Creating a car object via loop
 function createCarObjectLoop(cars) {
-  let carObject = {};
+  let carsObject = {};
   for (let i = 0; i < cars.length; i++) {
     let car = cars[i];
-    carObject[car.model] = car;
+    carsObject[car.model] = car;
   }
   return carObject;
 }
 
 //Creating a car object manually
 function createCarObjectManual(cars) {
-  let carObject = {};
+  let carsObject = {};
 
-  carObject[cars[0].model] = cars[0];
-  carObject[cars[1].model] = cars[1];
+  carsObject[cars[0].model] = cars[0];
+  carsObject[cars[1].model] = cars[1];
 
   return carObject;
 }
 
 //creating two objects from the two methods (these should be exactly the same)
-carObjectLoop = createCarObjectLoop(cars);
-carObjectManual = createCarObjectManual(cars);
+let carsObjectLoop = createCarObjectLoop(cars);
+let carsObjectManual = createCarObjectManual(cars);
 
 //searching the objects
 console.log(carObjectLoop["M4"].toString());
