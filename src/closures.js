@@ -29,9 +29,9 @@ myCounter() // 3
 myCounter() // 5
 
 // new closure - new outer scope - new contor variable
-var myOtherCountor = buildCounter(10)
-myOtherCountor() // 10
-myOtherCountor() // 12
+var myOtherCounter = buildCounter(10)
+myOtherCounter() // 10
+myOtherCounter() // 12
 
 // myContor was not affected
 myCounter() // 7
