@@ -3,6 +3,3 @@ const getName = () => {
 };
 
 exports.getName = getName;
-
-
-

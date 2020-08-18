@@ -1,3 +1,3 @@
 const user = require('./Modules.js');
-console.log(`User: ${user.getName()}`);
 
+console.log(`User: ${user.getName()}`);
