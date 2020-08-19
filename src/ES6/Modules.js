@@ -1,14 +1,11 @@
-// const getName = () => {
-//   return 'Simone';
-// };
+// //Common JS
+const getName = () => {
+  return 'Simone';
+};
 
-// exports.getName = getName;
+exports.getName = getName;
 
-//↑ This example will work because it use common JS
-
-
-// ↓ This example will  not work if you use common JS so you need to  install typescript
-
+//ES6 
 export default class User { // just add "default"
   constructor(name) {
     this.name = name;
