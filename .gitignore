@@ -79,6 +79,7 @@ web_modules/
 # Next.js build output
 .next
 out
+src/TypeScript/*.js
 
 # Nuxt.js build / generate output
 .nuxt
@@ -114,3 +115,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
