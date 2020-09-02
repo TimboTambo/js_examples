@@ -45,7 +45,7 @@ function hoisingWithVar() {
 hoisingWithVar()
 
 function hoisingWithLet() {
-  console.log("HOISTING WITH LET")
+  console.log("HOISTING WITH LETS")
   // Uncomment the line below to generate an error
   // console.log(foo) // undefined
   let foo = "Foo"
