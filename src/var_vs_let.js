@@ -37,7 +37,7 @@ blockScopeLet()
 // var declarations are "hoisted" to the top of a function block, so can be referenced before they are declared
 // let declarations are not hoisted, so trying to reference them before they are declared in code causes an error
 function hoisingWithVar() {
-  console.log("HOISTING WITH VAR")
+  console.log("HOISTING WITH VARS")
   console.log(foo) // undefined
   var foo = "Foo"
   console.log(foo) // Foo
