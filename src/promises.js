@@ -10,7 +10,7 @@ function callApi(username) {
 
 function printOutput(output) {
   console.log("Received outputsssssss!")
-  console.log(output)
+  console.log(outputs)
 }
 
 function printError(error) {
